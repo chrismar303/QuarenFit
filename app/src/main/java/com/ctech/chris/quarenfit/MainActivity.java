@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView bottomNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         initNavbar(bottomNav);
     }
 
@@ -52,6 +52,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onAddEntry(View view) {
-        Toast.makeText(getApplicationContext(),"ADDING ENTRY", Toast.LENGTH_SHORT);
+        Toast.makeText(getApplicationContext(),"ADDING ENTRY", Toast.LENGTH_SHORT).show();
     }
 }
