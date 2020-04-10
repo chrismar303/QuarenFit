@@ -6,9 +6,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/holo_purple">
 
+    <!--TODO complete layout-->
+
     <TextView
+        android:id="@+id/testTV2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello world"/>
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

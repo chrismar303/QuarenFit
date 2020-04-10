@@ -6,97 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:orientation="vertical">-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/curDateTV"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:text="00/00/0000"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="@android:color/black"-->
-            <!--android:textSize="25sp"-->
-            <!--android:textStyle="bold" />-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/curWeightTV"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:text="0.0 LB"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="@android:color/black"-->
-            <!--android:textSize="50sp"-->
-            <!--android:textStyle="bold"-->
-            <!--app:layout_constraintEnd_toEndOf="parent"-->
-            <!--app:layout_constraintStart_toStartOf="parent"-->
-            <!--tools:layout_editor_absoluteY="77dp" />-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="5dp"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/bodyFatTV"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:text="0.0% bf"-->
-                <!--android:textAlignment="center"-->
-                <!--android:textColor="@android:color/black"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/muscleMassTV"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:text="0.0% mm"-->
-                <!--android:textAlignment="center"-->
-                <!--android:textColor="@android:color/black"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold" />-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/bmiTV"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:text="0.0 bmi"-->
-                <!--android:textAlignment="center"-->
-                <!--android:textColor="@android:color/black"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold" />-->
-        <!--</LinearLayout>-->
-
-        <!--<Button-->
-            <!--android:id="@+id/addEntry"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginLeft="20dp"-->
-            <!--android:layout_marginTop="35dp"-->
-            <!--android:layout_marginRight="20dp"-->
-            <!--android:background="@android:color/holo_blue_light"-->
-            <!--android:onClick="onAddEntry"-->
-            <!--android:text="add entry"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textAllCaps="true"-->
-            <!--android:textStyle="bold" />-->
-
-    <!--</LinearLayout>-->
-
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation"

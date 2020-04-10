@@ -16,14 +16,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* initialize the bottom navigation */
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         initNavbar(bottomNav);
+        // set home button to be enabled on startup
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
     }
 
+    /* initializes functionality of navbar*/
     private void initNavbar(BottomNavigationView navBar) {
-        BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        // TODO improve readability
+        navBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                /* detect which button was pressed */
                 Fragment selectedFrag = null;
                 switch (menuItem.getItemId())
                 {
@@ -39,18 +45,14 @@ public class MainActivity extends AppCompatActivity {
                     default:
                         return false;
                 }
+                // display selected fragment
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFrag).commit();
                 return true;
             }
-        };
-//        navBar.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
-//
-//            }
-//        });
+        });
     }
 
+    // TODO: button to add new body stat or exercise
     public void onAddEntry(View view) {
         Toast.makeText(getApplicationContext(),"ADDING ENTRY", Toast.LENGTH_SHORT).show();
     }
