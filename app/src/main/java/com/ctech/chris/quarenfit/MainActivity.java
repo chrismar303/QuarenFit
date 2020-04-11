@@ -56,4 +56,9 @@ public class MainActivity extends AppCompatActivity {
     public void onAddEntry(View view) {
         Toast.makeText(getApplicationContext(),"ADDING ENTRY", Toast.LENGTH_SHORT).show();
     }
+
+    // TODO: button to update profile such as height, age, etc
+    public void onUpdateProfile(View view) {
+        Toast.makeText(getApplicationContext(), "UPDATING PROFILE", Toast.LENGTH_SHORT).show();
+    }
 }

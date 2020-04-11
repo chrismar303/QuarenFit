@@ -77,7 +77,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/addEntry"
+            android:id="@+id/addEntryBTN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -86,6 +86,20 @@
             android:background="@android:color/holo_blue_light"
             android:onClick="onAddEntry"
             android:text="add entry"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/updateProfileBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_purple"
+            android:onClick="onUpdateProfile"
+            android:text="Update Profile"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textStyle="bold" />
