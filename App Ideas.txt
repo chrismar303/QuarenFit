@@ -1,0 +1,28 @@
+Body Stats FRAGMENT (maybe rename history fragment)
+* Calendar
+- weight under day (blank if none)
+* When day clicked, display total calories, macros, workouts done
+* Possible graph view
+
+Exercise FRAGMENTS
+* Circuit trainer idea
+OR
+* track lifts, cardio, and sets
+
+
+Home FRAGMENT
+ADD ENTRY (consider having button in each respective fragments)
+* 2 buttons 
+- new body stat
+  > weight body 
+- new exercise?
+* new activity or small scrollable layout
+* date picker
+* intensity level 
+- light, moderate, high
+
+PROFILE
+* height
+* weight
+* bmi (program calculates)
+* goals? 
