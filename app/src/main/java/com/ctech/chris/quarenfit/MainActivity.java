@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         selectedFrag = new HomeFragment();
                         break;
-                    case R.id.nav_stats:
-                        selectedFrag = new StatsFragment();
+                    case R.id.nav_log:
+                        selectedFrag = new LogFragment();
                         break;
-                    case R.id.nav_exercise:
-                        selectedFrag = new ExerciseFragment();
-                        break;
+//                    case R.id.nav_exercise:
+//                        selectedFrag = new ExerciseFragment();
+//                        break;
                     default:
                         return false;
                 }
@@ -52,13 +52,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // TODO: button to add new body stat or exercise
-    public void onAddEntry(View view) {
-        Toast.makeText(getApplicationContext(),"ADDING ENTRY", Toast.LENGTH_SHORT).show();
-    }
-
     // TODO: button to update profile such as height, age, etc
     public void onUpdateProfile(View view) {
         Toast.makeText(getApplicationContext(), "UPDATING PROFILE", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClickEntry(View view) {
+        Toast.makeText(getApplicationContext(), "Clicked Entry", Toast.LENGTH_SHORT).show();
     }
 }

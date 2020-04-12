@@ -11,11 +11,11 @@ import android.widget.CalendarView;
 import android.widget.Toast;
 
 
-public class StatsFragment extends Fragment {
+public class LogFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.fragment_stats, container, false);
+        View layout = inflater.inflate(R.layout.fragment_log, container, false);
         initCalendar(layout);
         return layout;
     }
@@ -30,5 +30,7 @@ public class StatsFragment extends Fragment {
             }
         });
     }
+
+
 }
 
