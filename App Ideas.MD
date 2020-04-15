@@ -25,14 +25,14 @@
 * goals
 
 
-### Utility Classes to represent workouts
-## Workout
+## Utility Classes to represent workouts
+### Workout
 * name, intensity, notes
 
-### Strength Training
+#### Strength Training
 * extends Workout
 * weight, sets, reps
 
-### Cardio
+#### Cardio
 * extends Workout
 * duration
