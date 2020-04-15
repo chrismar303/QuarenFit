@@ -127,7 +127,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Cardio Container -->
+            <!-- Strength Training Container -->
             <LinearLayout
                 android:id="@+id/strengthTrainingContainer"
                 android:layout_width="match_parent"
@@ -160,18 +160,35 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:checked="true"
                         android:text="no" />
                 </RadioGroup>
 
-                <Button
-                    android:id="@+id/newStrengthExerciseBtn"
+                <LinearLayout
+                    android:id="@+id/strengthTrainingListContainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Strength Training"
-                    android:textSize="20sp" />
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/newStrengthExerciseBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Strength Training"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
 
+            <!-- Cardio Container -->
             <LinearLayout
                 android:id="@+id/cardioContainer"
                 android:layout_width="match_parent"
@@ -204,19 +221,34 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:checked="true"
                         android:text="no" />
                 </RadioGroup>
 
-                <Button
-                    android:id="@+id/newCardioBtn"
+                <LinearLayout
+                    android:id="@+id/cardioListContainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Cardio"
-                    android:textSize="20sp" />
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/newCardioBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Cardio"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
 
-            <!-- Strength Container -->
 
 
             <Button
