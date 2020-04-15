@@ -30,7 +30,7 @@
             android:orientation="vertical"
             android:weightSum="2"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/entryBTN"
+            app:layout_constraintEnd_toStartOf="@id/entryBtn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -38,27 +38,29 @@
                 android:id="@+id/weightSummaryTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0.00 lb"
-                android:textSize="30sp"
                 android:layout_weight="1"
-                android:gravity="center"/>
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:text="0.00 lb"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/caloriesSummaryTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0000 cals"
-                android:textSize="30sp"
                 android:layout_weight="1"
-                android:gravity="center"/>
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="0000 cals"
+                android:textSize="30sp" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/entryBTN"
+            android:id="@+id/entryBtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@drawable/border"
             android:backgroundTint="@color/colorPrimary"
-            android:onClick="onClickEntry"
             android:text="Entry"
             android:textAllCaps="true"
             android:textSize="40sp"

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogEntryActivity">
+
+
+
+    <TextView
+        android:id="@+id/entryTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entry"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryTV">
+
+        <LinearLayout
+            android:id="@+id/entryContrainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entryTV">
+
+
+            <!-- Body Stats Container -->
+            <LinearLayout
+                android:id="@+id/bodyStatsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/weightET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/bodyFatET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Body Fat %"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/muscleMassET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Muscle Mass %"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/bmiET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="BMI"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/caloriesEatenET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Calories Eaten"
+                    android:inputType="number" />
+
+                <!-- Macro Container -->
+                <LinearLayout
+                    android:id="@+id/macroContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/proteinET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="protein"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/carbsET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="carbs"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/fatET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Fat"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Cardio Container -->
+            <LinearLayout
+                android:id="@+id/strengthTrainingContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/strengthTrainingTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Strength Training"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/strengthTrainingRGP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yesStrengthTrainingRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="yes" />
+
+                    <RadioButton
+                        android:id="@+id/noStrengthTrainingRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="no" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/newStrengthExerciseBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Strength Training"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardioContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cardioTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Cardio"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/cardioRGP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yesCardioRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="yes" />
+
+                    <RadioButton
+                        android:id="@+id/noCardioRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="no" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/newCardioBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Cardio"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!-- Strength Container -->
+
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorAccent"
+                android:text="submit"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

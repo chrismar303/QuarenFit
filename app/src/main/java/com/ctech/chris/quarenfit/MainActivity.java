@@ -57,7 +57,17 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "UPDATING PROFILE", Toast.LENGTH_SHORT).show();
     }
 
+    // TODO: go to LogEntryActivity
     public void onClickEntry(View view) {
         Toast.makeText(getApplicationContext(), "Clicked Entry", Toast.LENGTH_SHORT).show();
     }
+
+
+
+    // Need Update Profile Activity
+    // - popup layout menu
+
+    // Open existing entry Activity
+    // - have a save entry button
+    // - put extra date from main activity to LogEntryActivity
 }
