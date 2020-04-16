@@ -1,0 +1,10 @@
+1. Database functionality
+2. RecyclerView functionality
+3. Add new Cardio / Strength Training Button Functionality
+	* popup layout dialog
+	- dropdown menu for intensity (light, moderate, intense)
+4. Save Log Entry Button functionality
+5. Summary of entry on LogFragment
+6. Update Profile Button functionality
+	* popup dialog
+
